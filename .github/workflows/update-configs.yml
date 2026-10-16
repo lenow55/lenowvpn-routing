@@ -11,6 +11,9 @@ on:
       - "LICENSE"
   repository_dispatch:
     types: [update-routing-configs]
+  schedule:
+    # Пример: запуск каждый день в 03:15 UTC
+    - cron: "15 3 * * *"
 
 permissions:
   contents: write
